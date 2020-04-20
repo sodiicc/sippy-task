@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+select {
+    width: 180px;
+    height: 36px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: rgb(190, 187, 187) solid 1px;
+    outline: none;
+    text-indent: 5px;
+}
+
+header {
+    background: linear-gradient(to bottom, #645e5e 0%, #3f3b3b 100%)
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+}
+
+.company {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f5972b;
+    line-height: 50px;
+}
+
+.empty {
+    width: 94px;
+}
+
+.settings {
+    padding: 10px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-wrapper {
+    text-align: center;
+}
+
+.chart-wrapper>div {
+    position: relative;
+    display: inline-block;
+}
+
+.total {
+    background: linear-gradient(to bottom, #645e5e 0%, #3f3b3b 100%);
+    color: #f5972b;
+    margin: 0;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.chart-name {
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    left: 250px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.chart {
+    width: 700px;
+}
+
+.fullscreen {
+    width: 90vw;
+}
+
+.resize-img {
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.resize-img:hover {
+    transform: scale(1.5);
+}

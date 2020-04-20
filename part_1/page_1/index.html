@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page_1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <img class="logo" src="./img/logo.png" alt="logo">
+                <h1 class="company">Sippy Softswitch</h1>
+                <div class="empty"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form>
+            <div>
+                <h2>Login</h2>
+                <div class="select-wrapper">
+                    <p>Login as:</p>
+                    <select class="select">
+                        <option value="account">Account</option>
+                        <option selected="selected" value="customer">Customer</option>
+                        <option value="vendor">Vendor</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <div class="hr"></div>
+                    <span>login</span>
+                    <div class="hr"></div>
+                </div>
+                <div>
+                    <input type="text" placeholder="User Name">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forgot your password?</a>
+                    <label class="input-agree">
+                        <input class="checkbox" type="checkbox">
+                        <span class="new-checkbox"></span>
+                        <p>Agree our <a href="#" class="conditions">Terms & Conditions</a></p>
+                    </label>
+                    <input class="submit" type="submit" value="login">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

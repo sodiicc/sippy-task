@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sippy</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <img class="logo" src="./img/logo.png" alt="logo">
+                <h1 class="company">Sippy Softswitch</h1>
+                <div class="empty"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="settings">
+            <div><span>Zoom Range</span>
+                <select name="">
+                    <option value="hour">1 hour ago till now</option>
+                    <option value="half-day">12 hours ago till now</option>
+                    <option value="day">1 day ago till now</option>
+                </select>
+            </div>
+            <div><span>Start Date/Time</span>
+                <select name="">
+                    <option value="hour">1 hour ago</option>
+                    <option value="half-day">12 hours ago</option>
+                    <option value="day">1 day ago</option>
+                </select>
+            </div>
+            <div><span>End Date/Time</span>
+                <select name="">
+                    <option value="now">now</option>
+                    <option value="yesterday">yesterday</option>
+                    <option value="week-ago">week ago</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="chart-wrapper">
+        <p class="total">System Total</p>
+        <div>
+            <div class="chart-name"></div>
+            <img class="chart" src="" alt="chart">
+            <img class="resize-img" src="./img/full_screen.jpg" alt="fullscreen">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
