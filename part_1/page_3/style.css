@@ -104,3 +104,8 @@ input{
 .border-error {
     border: 2px solid red;
 }
+
+.small-link {
+    font-size: 10px;
+    color: blue;
+}

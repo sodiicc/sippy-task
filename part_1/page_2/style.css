@@ -91,3 +91,8 @@ input{
     background: linear-gradient(to bottom, #777 0%, #454545 100%);
     color: #ffc439;
 }
+
+.small-link {
+    font-size: 10px;
+    color: blue;
+}

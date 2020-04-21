@@ -20,10 +20,12 @@ const resizeChart = (element) => {
     if (chart.classList.contains('fullscreen')) {
         chart.classList.remove('fullscreen')
         fullscreen.src = fullscreenUrl
+        fullscreen.style.width = '30px'
         total.innerHTML = title
     } else {
         chart.classList.add('fullscreen')
         fullscreen.src = exitFullscreenUrl
+        fullscreen.style.width = '50px'
         total.innerHTML = fullscreenTitle
     }
 }

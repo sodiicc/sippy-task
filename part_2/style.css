@@ -90,12 +90,12 @@ header {
 .resize-img {
     width: 30px;
     position: absolute;
-    bottom: 10px;
+    bottom: -5px;
     right: 10px;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .resize-img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
