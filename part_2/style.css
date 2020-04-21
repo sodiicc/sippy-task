@@ -94,6 +94,7 @@ header {
     right: 10px;
     cursor: pointer;
     transition: 0.5s;
+    opacity: 0.6;
 }
 
 .resize-img:hover {
