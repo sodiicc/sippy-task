@@ -79,14 +79,6 @@ header {
     cursor: pointer;
 }
 
-.chart {
-    /* width: 700px; */
-}
-
-.fullscreen {
-    /* width: 90vw; */
-}
-
 .resize-img {
     width: 30px;
     position: absolute;
