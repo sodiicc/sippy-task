@@ -8,6 +8,9 @@ let total = document.querySelector('.total')
 const imgUrl = 'http://128.199.49.98/simpleapi/get_cpuload.php'
 const queryParams = 'width=3600&img_width=700&img_height=400'
 
+// (viewport height * 95% - header height) it makes to avoid scroll
+const queryParamsResize = `width=3600&img_width=${window.innerWidth * 0.9}&img_height=${window.innerHeight * 0.95 -180}`
+
 const fullscreenUrl = './img/full_screen.jpg'
 const exitFullscreenUrl = './img/exit_full_screen.png'
 const title = 'System Total'
@@ -17,20 +20,19 @@ chart.src = `${imgUrl}?${queryParams}`
 
 console.log('window.innerHeight', window.innerHeight)
 
-//Function to resize the chart
+//Functions to resize the chart
+const toggleChart = (url, title, src) => {
+    chart.classList.toggle('fullscreen')
+    fullscreen.src = url
+    total.innerHTML = title
+    chart.src = `${imgUrl}?${src}`
+}
+
 const resizeChart = () => {
     if (chart.classList.contains('fullscreen')) {
-        chart.classList.remove('fullscreen')
-        fullscreen.src = fullscreenUrl
-        total.innerHTML = title
-        chart.src = `${imgUrl}?${queryParams}`
+        toggleChart(fullscreenUrl, title, queryParams)
     } else {
-        chart.classList.add('fullscreen')
-        fullscreen.src = exitFullscreenUrl
-        total.innerHTML = fullscreenTitle
-
-        // (viewport height * 95% - header height) it makes to avoid scroll
-        chart.src = `${imgUrl}?width=3600&img_width=${window.innerWidth * 0.9}&img_height=${window.innerHeight * 0.95 -180}`
+        toggleChart(exitFullscreenUrl, fullscreenTitle, queryParamsResize)
     }
 }
 
